@@ -127,3 +127,5 @@ let numArray = getArray<number>([1, 2, 3, 4])
 let strArray = getArray<string>(['brad', 'John', 'Jill'])
 
 strArray.push("Thor")
+
+console.log(numArray);
