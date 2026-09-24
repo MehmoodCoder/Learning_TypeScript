@@ -64,7 +64,15 @@ git clone <your-repository-url>
 cd Learning_TypeScript/First_TS_Project
 ```
 
-### 2. Install Dependencies
+### 2. Global TypeScript Installation
+
+Install TypeScript globally on your system to use `tsc` commands directly:
+
+```bash
+npm install -g typescript
+```
+
+### 3. Install Dependencies
 
 TypeScript is already listed as a project dependency. Install it locally with:
 
@@ -72,9 +80,15 @@ TypeScript is already listed as a project dependency. Install it locally with:
 npm install
 ```
 
+Or
+
+```bash
+npm i typescript
+```
+
 Using the local dependency keeps the project compiler version consistent across different machines.
 
-### 3. Explore the Source File
+### 4. Explore the Source File
 
 Open `src/Notes.ts` and review the examples covering the concepts listed above.
 
@@ -82,12 +96,12 @@ Open `src/Notes.ts` and review the examples covering the concepts listed above.
 
 ## 🧰 TypeScript Commands
 
-Run these commands from inside the `First_TS_Project` directory.
+Run these commands from inside the `Project Folder` directory.
 
 ### Compile the Project
 
 ```bash
-npx tsc
+tsc
 ```
 
 This reads `tsconfig.json`, compiles TypeScript files from `src/`, and writes JavaScript, declaration, and source map files to `dist/`.
@@ -95,7 +109,7 @@ This reads `tsconfig.json`, compiles TypeScript files from `src/`, and writes Ja
 ### Watch for Changes
 
 ```bash
-npx tsc --watch
+tsc --watch
 ```
 
 The compiler will rebuild the project whenever a source file changes. Press `Ctrl + C` to stop watch mode.
@@ -103,18 +117,46 @@ The compiler will rebuild the project whenever a source file changes. Press `Ctr
 ### Run the Compiled JavaScript
 
 ```bash
-node dist/Notes.js
+node dist/FileName.js
 ```
 
 The current notes file logs the generated number array to the terminal.
 
+### Run Compiled Code
+
+```bash
+node dist/FileName.js
+```
+
 ### Type-Check Without Emitting Files
 
 ```bash
-npx tsc --noEmit
+tsc --noEmit
 ```
 
 This checks the project for type errors without creating or changing files in `dist/`.
+
+---
+
+## ⚡ Optional: Convenient npm Scripts
+
+You can add these shortcut scripts to your package.json file:
+
+```json
+"scripts": {
+  "build": "tsc",
+  "watch": "tsc --watch",
+  "start": "tsc && node dist/Notes.js",
+  "check": "tsc --noEmit"
+}
+```
+
+Now you can run:
+
+* `npm run build` to compile
+* `npm run watch` for auto-rebuild
+* `npm start` to compile and run in one step
+* `npm run check` for quick type checks
 
 ---
 
