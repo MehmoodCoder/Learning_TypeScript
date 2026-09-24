@@ -130,8 +130,7 @@ Learning_TypeScript/
 	├── 📄 package.json
 	├── ⚙️ package-lock.json
 	├── ⚙️ tsconfig.json
-	├── 📁 dist/              # Generated after compilation
-	└── 📁 node_modules/      # Created by npm install
+	└── 📁 dist/              # Generated after compilation
 ```
 
 ### ⚙️ Compiler Configuration
