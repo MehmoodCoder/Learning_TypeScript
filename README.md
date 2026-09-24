@@ -130,8 +130,6 @@ The compiler will rebuild the project whenever a source file changes. Press `Ctr
 node dist/FileName.js
 ```
 
-The current notes file logs the generated number array to the terminal.
-
 ### Run Compiled Code
 
 ```bash
