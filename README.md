@@ -170,6 +170,9 @@ Now you can run:
 
 ## 🗂️ Project Structure
 
+**Generated:** 9/24/2026, 6:46:44 AM
+**Root Path:** `workspace\Learning_TypeScript`
+
 ```text
 Learning_TypeScript/
 ├── 📄 README.md
