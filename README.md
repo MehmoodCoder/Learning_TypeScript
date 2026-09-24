@@ -61,7 +61,7 @@ npm --version
 
 ```bash
 git clone <your-repository-url>
-cd Learning_TypeScript/First_TS_Project
+cd Main_folder/Project_Folder
 ```
 
 ### 2. Global TypeScript Installation
@@ -88,7 +88,17 @@ npm i typescript
 
 Using the local dependency keeps the project compiler version consistent across different machines.
 
-### 4. Explore the Source File
+### 4. Initialize TypeScript Configuration
+
+Generate the `tsconfig.json` file to configure compiler settings and strict type-checking rules:
+
+```bash
+tsc --init
+```
+
+> Note: This creates a tsconfig.json file in your root folder with "strict": true enabled by default.
+
+### 5. Explore the Source File
 
 Open `src/Notes.ts` and review the examples covering the concepts listed above.
 
